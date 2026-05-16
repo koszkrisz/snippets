@@ -4,7 +4,7 @@
 ## C#
 - LINQ Any
 - File.ReadAllLines
-- Konstruktor minta
+- LINQ gyors puska
 
 ## Django
 - serializer
@@ -12,8 +12,7 @@
 - views
 
 ## React
-- fetch
-- useEffect
+- fetch - useEffect
 
 ## SQL
 - JOIN
