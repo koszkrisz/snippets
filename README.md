@@ -6,15 +6,6 @@
 - File.ReadAllLines
 - Konstruktor minta
 
-## WPF
-- MySQL kapcsolat
-- DataGrid
-- Button Click
-
-## SQL
-- JOIN
-- GROUP BY
-
 ## Django
 - serializer
 - urls
@@ -23,3 +14,17 @@
 ## React
 - fetch
 - useEffect
+
+## SQL
+- JOIN
+- GROUP BY
+
+## WPF
+- MySQL kapcsolat
+- DataGrid
+- Button Click
+
+
+
+
+
