@@ -142,3 +142,20 @@ namespace Hajo
             sw.Close();
         }
 
+public void feladat7()
+{
+    Console.Write("7. feladat: Kérem a foglalat nevét: ");
+    string keresettFoglalat = Console.ReadLine();
+
+    var talalatok = termekek.Where(t => t.Foglalat == keresettFoglalat);
+
+    if (talalatok.Any())
+    {
+        double atlag = talalatok.Average(t => t.Teljesitmeny);
+        Console.WriteLine($"A lámpák átlagos teljesítménye: {atlag}");
+    }
+    else
+    {
+        Console.WriteLine("Nem található ilyen foglalatú lámpa.");
+    }
+}
