@@ -2,7 +2,8 @@
 
 private void btnMent_Click(object sender, RoutedEventArgs e)
 {
-    MessageBox.Show("A gomb működik!");
+     VersenyAdat aktualis = (VersenyAdat)dataGrid.SelectedItem;
+tbxHelyezes.Text = "Helyezes: " +  aktualis.Helyezes;
 }
 
 /*
