@@ -1,24 +1,26 @@
-
-namespace Vilagitas
+class Konyv
 {
-    internal class Termek
+    public string Cim { get; set; }
+    public string Nev { get; set; }
+    public string Nemzetiseg { get; set; }
+    public int SzulEv { get; set; }
+    public int HalEv { get; set; }
+    public int Helyezes { get; set; }
+
+    public Konyv(string sor)
     {
-        List<Termek> termekek = new List<Termek>();
-        public Termek(string sor)
-        {
-            var adatok = sor.Split(';');
-            TermekNev = adatok[0];
-            Teljesitmeny = int.Parse(adatok[1]);
-            Feszultseg = adatok[2];
-            Foglalat = adatok[3];
-            Elettartam = int.Parse(adatok[4]);
-        }
+        string[] adatok = sor.Split(';');
 
-        public string TermekNev { get; set; }
-        public int Teljesitmeny { get; set; }
-        public string Feszultseg { get; set; }
-        public string Foglalat { get; set; }
+        Cim = adatok[0];
+        Nev = adatok[1];
+        Nemzetiseg = adatok[2];
+        SzulEv = int.Parse(adatok[3]);
+        HalEv = int.Parse(adatok[4]);
+        Helyezes = int.Parse(adatok[5]);
+    }
 
-        public int Elettartam { get; set; }
+    public bool Kituntet()
+    {
+        return Nemzetiseg == "magyar" && Helyezes <= 50;
     }
 }
